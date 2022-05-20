@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+
+    <link
+      rel="shortcut icon"
+      href="./img/questionMark.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Nanum+Brush+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/0f556cef3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script defer type="module" src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-start">
+        <div id="title" class="title-start">Memory Game</div>
+      </div>
+      <div class="header-play hidden">
+        <div id="title" class="title-play">Memory Game</div>
+        <button type="submit" class="shuffle-btn" data-level="easy">
+          Shuffle
+        </button>
+        <button type="submit" class="back-btn">Back</button>
+        <div class="statistics-play">
+          <div class="timer-label">
+            Timer: <span class="timer"> 00:00</span>
+          </div>
+          <div class="best-time">
+            The best time: <span class="the-best-time">00:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="level-window">
+        <h3>Choose a level of difficulty.</h3>
+        <p>Time: <span class="max-time"></span></p>
+        <p>Easy- 16 cards | Medium- 36 cards | Hard- 64 cards</p>
+        <div class="level-buttons">
+          <button class="button--easy" data-level="easy">Easy</button>
+          <button class="button--medium" data-level="medium">Medium</button>
+          <button class="button--hard" data-level="hard">Hard</button>
+        </div>
+      </div>
+
+      <div class="play-window hidden"></div>
+
+      <div class="modal-ready hidden">
+        <h3>Are you ready?</h3>
+        <button class="button--play">Play!</button>
+        <button class="button--exit">Exit</button>
+      </div>
+
+      <div class="overlay hidden"></div>
+
+      <div class="statistics-start">
+        <!-- <div class="timer-label">Timer: <span class="timer"> 00:00</span></div> -->
+        <div class="best-time">
+          The best time: <span class="the-best-time">00:00</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
