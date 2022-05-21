@@ -38,7 +38,6 @@ const setTime = function () {
   maxTimeLabel.textContent = `${min}:${sec}`;
 };
 setTime();
-console.log(typeof MAX_TIME);
 
 const checkMatch = function () {
   const allCards = document.querySelectorAll(".main-card");
@@ -218,11 +217,6 @@ const startView = [headerStart, statisticsStart, levelWindow];
 const playView = [playWindow, headerPlay, modalReady, overlay];
 
 const loadGame = function (level) {
-  // startView.forEach((el) => {
-  //   el.style.opacity = "0";
-  //   setTimeout(el.classList.add("hidden"), 1000);
-  // });
-
   $(".level-window").fadeOut(500);
   $(".statistics-start").fadeOut(500);
   $(".header-start").fadeOut(500);
