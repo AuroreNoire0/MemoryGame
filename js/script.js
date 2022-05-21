@@ -65,9 +65,9 @@ const checkMatch = function () {
     const [card1, card2] = [...activeCards];
 
     if (card1.getAttribute("id") === card2.getAttribute("id")) {
-      setTimeout(markAsMatched, 1500);
+      setTimeout(markAsMatched, 1000);
     } else {
-      setTimeout(hide, 1500);
+      setTimeout(hide, 1000);
     }
 
     playWindow.removeEventListener("click", flip);

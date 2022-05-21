@@ -1,5 +1,6 @@
 :root {
   --card: url(img/paper.png);
+  --buttons-color: rgba(108, 101, 91, 0.5);
 }
 
 * {
@@ -13,7 +14,6 @@ html {
 }
 
 body {
-  /* min-width: 1600px; */
   height: 100vh;
   background: rgb(231, 224, 208);
   background: linear-gradient(
@@ -85,7 +85,6 @@ body {
   font-family: "Nanum Brush Script", cursive;
   padding: 2rem;
   background-color: rgb(163, 119, 7);
-  /* transition: opacity 1s linear; */
 }
 
 .level-window h3 {
@@ -150,7 +149,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* transition: opacity 1s linear; */
 }
 
 .modal-ready,
@@ -167,7 +165,6 @@ body {
   z-index: 100;
   transform: translate(-50%, -50%);
   box-shadow: 0 4rem 6rem rgb(0 0 0 / 30%);
-  /* transition: opacity 1s linear; */
   flex-direction: column;
   text-align: center;
   padding: 3rem;
@@ -186,7 +183,6 @@ body {
   backdrop-filter: blur(4px);
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 5;
-  /* transition: opacity 1s linear; */
 }
 
 .button--exit,
@@ -203,7 +199,7 @@ body {
   margin-top: 5rem;
   text-align: center;
   height: 5rem;
-  background-color: rgba(108, 101, 91, 0.5);
+  background-color: var(--buttons-color);
   border-radius: 20%;
 }
 
