@@ -228,24 +228,32 @@ const shuffleCards = function (lvl) {
   }
 };
 
+const startView = [headerStart, statisticsStart, levelWindow];
+const playView = [playWindow, headerPlay, modalReady, overlay];
+
 const loadGame = function (level) {
+  // startView.forEach((el) => {
+  //   el.style.opacity = "0";
+  //   setTimeout(el.classList.add("hidden"), 1000);
+  // });
+
   $(".level-window").fadeOut(500);
   $(".statistics-start").fadeOut(500);
   $(".header-start").fadeOut(500);
 
   const showGame = function () {
-    $(".play-window").fadeIn(300, function () {
+    $(".play-window").fadeIn(400, function () {
       this.classList.remove("hidden");
       this.style.display = "flex";
     });
-    $(".header-play").fadeIn(300, function () {
+    $(".header-play").fadeIn(400, function () {
       this.classList.remove("hidden");
       this.style.display = "flex";
     });
-    $(".modal-ready").fadeIn(400, function () {
+    $(".modal-ready").fadeIn(500, function () {
       this.classList.remove("hidden");
     });
-    $(".overlay").fadeIn(300, function () {
+    $(".overlay").fadeIn(400, function () {
       this.classList.remove("hidden");
     });
   };
