@@ -58,21 +58,7 @@ const checkMatch = function () {
 
     const matchedCards = document.querySelectorAll(".matched");
     if (matchedCards.length === allCards.length) {
-      // const modalWin = `<div class="modal-win">
-      //   <h3> Congratulations! 🎉</h3>
-      //   <p> Your time: ${timerValue.textContent}<p>
-      //   <button class="button--playagain">Play again!</button>
-      //   <button class="button--exit--again">Exit</button>
-      // </div>`;
-      // generateModal(modalWin);
-      // if (time < theBestTime || !theBestTime) {
-      //   theBestTime = time - 1;
-      //   const min = String(Math.trunc(theBestTime / 60)).padStart(2, 0);
-      //   const sec = String(Math.trunc(theBestTime % 60)).padStart(2, 0);
-      //   theBestTimeLabels.forEach(
-      //     (btLabel) => (btLabel.textContent = `${min}:${sec}`)
-      //   );
-      // }
+      gameWon();
     }
   };
 
