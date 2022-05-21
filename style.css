@@ -126,11 +126,19 @@ body {
   width: 50rem;
 }
 
-.timer-label,
-.best-time {
+.timer-label {
   padding: 1rem;
+  width: 20rem;
 }
 
+.best-time {
+  padding: 1rem;
+  width: 30rem;
+}
+
+.statistics-start .best-time {
+  width: 50rem;
+}
 .visible {
   display: flex;
 }
