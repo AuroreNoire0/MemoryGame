@@ -1,4 +1,4 @@
-export const MAX_TIME = 120; /*seconds */
+export const MAX_TIME = 210; /*seconds */
 export let iconsEasy = [
   '<i class="fa-solid fa-bell" data.index = "0"></i>',
   '<i class="fa-solid fa-anchor" data.index = "1"></i>',
